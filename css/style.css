@@ -1,8 +1,12 @@
 .square{
-    width: calc((100% / 7) - 2rem);
+    width: calc((100% / 7) - 1rem);
     aspect-ratio: 1;
-    margin: 1rem; 
+    margin: 0.5rem; 
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+body{
+    background-color: bisque;
 }

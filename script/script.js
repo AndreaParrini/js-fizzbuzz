@@ -1,9 +1,35 @@
 const containerElement = document.querySelector('.container');
 
-console.log(containerElement);
+for (let i = 1; i <= 100; i++) {
 
-for( let i = 1; i <=100 ; i++){
-    const squareMarkup = `<div class="square"> ${i} </div>`;
-    console.log(squareMarkup);
-    containerElement.insertAdjacentHTML("beforeend", squareMarkup );
+    /* prova creazione div con append
+    const divElement = document.createElement('div');
+    document.querySelector('div').classList.add('bg-primary');
+    document.querySelector('div').classList.add('square');
+    divElement.append(i);
+    containerElement.append(divElement);  */
+
+    if (i % 3 == 0 & i % 5 == 0) {
+
+        const squareMarkup = `<div class="square bg-warning"> fizzbuzz </div>`;
+        containerElement.insertAdjacentHTML("beforeend", squareMarkup);
+
+    } else if (i % 5 == 0) {
+
+        const squareMarkup = `<div class="square bg-danger"> buzz </div>`;
+        containerElement.insertAdjacentHTML("beforeend", squareMarkup);
+
+    } else if (i % 3 == 0) {
+
+        const squareMarkup = `<div class="square bg-secondary"> fizz </div>`;
+        containerElement.insertAdjacentHTML("beforeend", squareMarkup);
+
+    } else {
+
+        const squareMarkup = `<div class="square bg-primary"> ${i} </div>`;
+        containerElement.insertAdjacentHTML("beforeend", squareMarkup);
+
+    }
+
+
 }
