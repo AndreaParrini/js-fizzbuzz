@@ -1,0 +1,8 @@
+.square{
+    width: calc((100% / 7) - 2rem);
+    aspect-ratio: 1;
+    margin: 1rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
