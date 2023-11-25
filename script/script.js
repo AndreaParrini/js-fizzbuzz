@@ -11,15 +11,15 @@ for (let i = 1; i <= 100; i++) {
 
     let squareMarkup = "";
 
-    if (i % 3 == 0 & i % 5 == 0) {
+    if (i % 3 === 0 & i % 5 === 0) {
 
         squareMarkup = `<div class="square bg-warning"> fizzbuzz </div>`;
 
-    } else if (i % 5 == 0) {
+    } else if (i % 5 === 0) {
 
         squareMarkup = `<div class="square bg-danger"> buzz </div>`;
 
-    } else if (i % 3 == 0) {
+    } else if (i % 3 === 0) {
 
         squareMarkup = `<div class="square bg-secondary"> fizz </div>`;
 
