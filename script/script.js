@@ -9,27 +9,28 @@ for (let i = 1; i <= 100; i++) {
     divElement.append(i);
     containerElement.append(divElement);  */
 
+    let squareMarkup = "";
+
     if (i % 3 == 0 & i % 5 == 0) {
 
-        const squareMarkup = `<div class="square bg-warning"> fizzbuzz </div>`;
-        containerElement.insertAdjacentHTML("beforeend", squareMarkup);
+        squareMarkup = `<div class="square bg-warning"> fizzbuzz </div>`;
 
     } else if (i % 5 == 0) {
 
-        const squareMarkup = `<div class="square bg-danger"> buzz </div>`;
-        containerElement.insertAdjacentHTML("beforeend", squareMarkup);
+        squareMarkup = `<div class="square bg-danger"> buzz </div>`;
 
     } else if (i % 3 == 0) {
 
-        const squareMarkup = `<div class="square bg-secondary"> fizz </div>`;
-        containerElement.insertAdjacentHTML("beforeend", squareMarkup);
+        squareMarkup = `<div class="square bg-secondary"> fizz </div>`;
 
     } else {
 
-        const squareMarkup = `<div class="square bg-primary"> ${i} </div>`;
-        containerElement.insertAdjacentHTML("beforeend", squareMarkup);
+        squareMarkup = `<div class="square bg-primary"> ${i} </div>`;
+        
 
     }
+
+    containerElement.insertAdjacentHTML("beforeend", squareMarkup);
 
 
 }
