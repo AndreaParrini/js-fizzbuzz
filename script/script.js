@@ -2,11 +2,9 @@ const containerElement = document.querySelector('.container');
 
 for (let i = 1; i <= 100; i++) {
 
-    /* prova creazione div con append */
     const divElement = document.createElement('div');
     divElement.classList.add('square');
     
-
     //let squareMarkup = "";
 
     if (i % 3 === 0 & i % 5 === 0) {
